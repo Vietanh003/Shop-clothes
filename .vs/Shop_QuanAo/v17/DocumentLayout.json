@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Project\\BanQuanAo\\Shop_QuanAo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D152C60F-3537-428C-9471-75E1BCD13B86}|Shop_QuanAo\\Shop_QuanAo.csproj|e:\\project\\banquanao\\shop_quanao\\shop_quanao\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D152C60F-3537-428C-9471-75E1BCD13B86}|Shop_QuanAo\\Shop_QuanAo.csproj|solutionrelative:shop_quanao\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D152C60F-3537-428C-9471-75E1BCD13B86}|Shop_QuanAo\\Shop_QuanAo.csproj|e:\\project\\banquanao\\shop_quanao\\shop_quanao\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D152C60F-3537-428C-9471-75E1BCD13B86}|Shop_QuanAo\\Shop_QuanAo.csproj|solutionrelative:shop_quanao\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D152C60F-3537-428C-9471-75E1BCD13B86}|Shop_QuanAo\\Shop_QuanAo.csproj|e:\\project\\banquanao\\shop_quanao\\shop_quanao\\shop_quanao.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{D152C60F-3537-428C-9471-75E1BCD13B86}|Shop_QuanAo\\Shop_QuanAo.csproj|solutionrelative:shop_quanao\\shop_quanao.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D152C60F-3537-428C-9471-75E1BCD13B86}|Shop_QuanAo\\Shop_QuanAo.csproj|e:\\project\\banquanao\\shop_quanao\\shop_quanao\\areas\\admin\\controllers\\danhmuccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D152C60F-3537-428C-9471-75E1BCD13B86}|Shop_QuanAo\\Shop_QuanAo.csproj|solutionrelative:shop_quanao\\areas\\admin\\controllers\\danhmuccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D152C60F-3537-428C-9471-75E1BCD13B86}|Shop_QuanAo\\Shop_QuanAo.csproj|e:\\project\\banquanao\\shop_quanao\\shop_quanao\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D152C60F-3537-428C-9471-75E1BCD13B86}|Shop_QuanAo\\Shop_QuanAo.csproj|solutionrelative:shop_quanao\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D152C60F-3537-428C-9471-75E1BCD13B86}|Shop_QuanAo\\Shop_QuanAo.csproj|e:\\project\\banquanao\\shop_quanao\\shop_quanao\\models\\danhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D152C60F-3537-428C-9471-75E1BCD13B86}|Shop_QuanAo\\Shop_QuanAo.csproj|solutionrelative:shop_quanao\\models\\danhmuc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D152C60F-3537-428C-9471-75E1BCD13B86}|Shop_QuanAo\\Shop_QuanAo.csproj|e:\\project\\banquanao\\shop_quanao\\shop_quanao\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D152C60F-3537-428C-9471-75E1BCD13B86}|Shop_QuanAo\\Shop_QuanAo.csproj|solutionrelative:shop_quanao\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D152C60F-3537-428C-9471-75E1BCD13B86}|Shop_QuanAo\\Shop_QuanAo.csproj|e:\\project\\banquanao\\shop_quanao\\shop_quanao\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D152C60F-3537-428C-9471-75E1BCD13B86}|Shop_QuanAo\\Shop_QuanAo.csproj|solutionrelative:shop_quanao\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D152C60F-3537-428C-9471-75E1BCD13B86}|Shop_QuanAo\\Shop_QuanAo.csproj|e:\\project\\banquanao\\shop_quanao\\shop_quanao\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D152C60F-3537-428C-9471-75E1BCD13B86}|Shop_QuanAo\\Shop_QuanAo.csproj|solutionrelative:shop_quanao\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a83394e3-39c2-4678-a3c8-364b69d78fd3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DanhMucController.cs",
+              "DocumentMoniker": "E:\\Project\\BanQuanAo\\Shop_QuanAo\\Shop_QuanAo\\Areas\\Admin\\Controllers\\DanhMucController.cs",
+              "RelativeDocumentMoniker": "Shop_QuanAo\\Areas\\Admin\\Controllers\\DanhMucController.cs",
+              "ToolTip": "E:\\Project\\BanQuanAo\\Shop_QuanAo\\Shop_QuanAo\\Areas\\Admin\\Controllers\\DanhMucController.cs",
+              "RelativeToolTip": "Shop_QuanAo\\Areas\\Admin\\Controllers\\DanhMucController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T04:34:34.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Project\\BanQuanAo\\Shop_QuanAo\\Shop_QuanAo\\appsettings.json",
+              "RelativeDocumentMoniker": "Shop_QuanAo\\appsettings.json",
+              "ToolTip": "E:\\Project\\BanQuanAo\\Shop_QuanAo\\Shop_QuanAo\\appsettings.json",
+              "RelativeToolTip": "Shop_QuanAo\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-30T03:26:30.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Project\\BanQuanAo\\Shop_QuanAo\\Shop_QuanAo\\Program.cs",
+              "RelativeDocumentMoniker": "Shop_QuanAo\\Program.cs",
+              "ToolTip": "E:\\Project\\BanQuanAo\\Shop_QuanAo\\Shop_QuanAo\\Program.cs",
+              "RelativeToolTip": "Shop_QuanAo\\Program.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwCoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T03:26:29.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Danhmuc.cs",
+              "DocumentMoniker": "E:\\Project\\BanQuanAo\\Shop_QuanAo\\Shop_QuanAo\\Models\\Danhmuc.cs",
+              "RelativeDocumentMoniker": "Shop_QuanAo\\Models\\Danhmuc.cs",
+              "ToolTip": "E:\\Project\\BanQuanAo\\Shop_QuanAo\\Shop_QuanAo\\Models\\Danhmuc.cs",
+              "RelativeToolTip": "Shop_QuanAo\\Models\\Danhmuc.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T04:40:18.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Shop_QuanAo.http",
+              "DocumentMoniker": "E:\\Project\\BanQuanAo\\Shop_QuanAo\\Shop_QuanAo\\Shop_QuanAo.http",
+              "RelativeDocumentMoniker": "Shop_QuanAo\\Shop_QuanAo.http",
+              "ToolTip": "E:\\Project\\BanQuanAo\\Shop_QuanAo\\Shop_QuanAo\\Shop_QuanAo.http",
+              "RelativeToolTip": "Shop_QuanAo\\Shop_QuanAo.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-12-30T04:36:57.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "E:\\Project\\BanQuanAo\\Shop_QuanAo\\Shop_QuanAo\\Models\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Shop_QuanAo\\Models\\ApplicationDbContext.cs",
+              "ToolTip": "E:\\Project\\BanQuanAo\\Shop_QuanAo\\Shop_QuanAo\\Models\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Shop_QuanAo\\Models\\ApplicationDbContext.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAA7wEgAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T03:37:56.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "E:\\Project\\BanQuanAo\\Shop_QuanAo\\Shop_QuanAo\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "Shop_QuanAo\\WeatherForecast.cs",
+              "ToolTip": "E:\\Project\\BanQuanAo\\Shop_QuanAo\\Shop_QuanAo\\WeatherForecast.cs",
+              "RelativeToolTip": "Shop_QuanAo\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T04:37:22.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "E:\\Project\\BanQuanAo\\Shop_QuanAo\\Shop_QuanAo\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Shop_QuanAo\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "E:\\Project\\BanQuanAo\\Shop_QuanAo\\Shop_QuanAo\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Shop_QuanAo\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-30T04:27:26.302Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "E:\\Project\\BanQuanAo\\Shop_QuanAo\\Shop_QuanAo\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "Shop_QuanAo\\ScaffoldingReadMe.txt",
+              "ToolTip": "E:\\Project\\BanQuanAo\\Shop_QuanAo\\Shop_QuanAo\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "Shop_QuanAo\\ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-12-30T04:20:12.597Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

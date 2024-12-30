@@ -1,0 +1,947 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Shop_QuanAo",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/DanhMuc/GetDanhMucList": {
+      "get": {
+        "tags": [
+          "DanhMuc"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DanhMuc/AddDanhMuc": {
+      "post": {
+        "tags": [
+          "DanhMuc"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Danhmuc"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Danhmuc"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Danhmuc"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Chitietdonhang": {
+        "type": "object",
+        "properties": {
+          "idchitietdonhang": {
+            "type": "number",
+            "format": "double"
+          },
+          "iddonhang": {
+            "type": "number",
+            "format": "double"
+          },
+          "idsanpham": {
+            "type": "number",
+            "format": "double"
+          },
+          "soluong": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "iddonhangNavigation": {
+            "$ref": "#/components/schemas/Donhang"
+          },
+          "idsanphamNavigation": {
+            "$ref": "#/components/schemas/Sanpham"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Chitietgiohang": {
+        "type": "object",
+        "properties": {
+          "idchitietgiohang": {
+            "type": "number",
+            "format": "double"
+          },
+          "idgiohang": {
+            "type": "number",
+            "format": "double"
+          },
+          "idsanpham": {
+            "type": "number",
+            "format": "double"
+          },
+          "soluong": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "idgiohangNavigation": {
+            "$ref": "#/components/schemas/Giohang"
+          },
+          "idsanphamNavigation": {
+            "$ref": "#/components/schemas/Sanpham"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Chitietkhuyenmai": {
+        "type": "object",
+        "properties": {
+          "idchitietkhuyenmai": {
+            "type": "number",
+            "format": "double"
+          },
+          "idkhuyenmai": {
+            "type": "number",
+            "format": "double"
+          },
+          "idsanpham": {
+            "type": "number",
+            "format": "double"
+          },
+          "idkhuyenmaiNavigation": {
+            "$ref": "#/components/schemas/Khuyenmai"
+          },
+          "idsanphamNavigation": {
+            "$ref": "#/components/schemas/Sanpham"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Chitietphieunhap": {
+        "type": "object",
+        "properties": {
+          "idchitietphieunhap": {
+            "type": "number",
+            "format": "double"
+          },
+          "idphieunhap": {
+            "type": "number",
+            "format": "double"
+          },
+          "idtonkho": {
+            "type": "number",
+            "format": "double"
+          },
+          "soluongnhap": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "dongianhap": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "thanhtien": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "idphieunhapNavigation": {
+            "$ref": "#/components/schemas/Phieunhap"
+          },
+          "idtonkhoNavigation": {
+            "$ref": "#/components/schemas/Tonkho"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Chitietsanpham": {
+        "type": "object",
+        "properties": {
+          "idchitietsanpham": {
+            "type": "number",
+            "format": "double"
+          },
+          "idsanpham": {
+            "type": "number",
+            "format": "double"
+          },
+          "tenchitiet": {
+            "type": "string",
+            "nullable": true
+          },
+          "noidung": {
+            "type": "string",
+            "nullable": true
+          },
+          "idsanphamNavigation": {
+            "$ref": "#/components/schemas/Sanpham"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Danhmuc": {
+        "type": "object",
+        "properties": {
+          "iddanhmuc": {
+            "type": "number",
+            "format": "double"
+          },
+          "tendanhmuc": {
+            "type": "string",
+            "nullable": true
+          },
+          "mota": {
+            "type": "string",
+            "nullable": true
+          },
+          "loaisanphams": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Loaisanpham"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Donhang": {
+        "type": "object",
+        "properties": {
+          "iddonhang": {
+            "type": "number",
+            "format": "double"
+          },
+          "idkhachhang": {
+            "type": "number",
+            "format": "double"
+          },
+          "idnhanvien": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "idgiamgia": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ngaytao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "ngaygiaohang": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "diachi": {
+            "type": "string",
+            "nullable": true
+          },
+          "tongtien": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "trangthai": {
+            "type": "string",
+            "nullable": true
+          },
+          "ghichu": {
+            "type": "string",
+            "nullable": true
+          },
+          "chitietdonhangs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Chitietdonhang"
+            },
+            "nullable": true
+          },
+          "idgiamgiaNavigation": {
+            "$ref": "#/components/schemas/Giamgium"
+          },
+          "idnhanvienNavigation": {
+            "$ref": "#/components/schemas/Nhanvien"
+          },
+          "thanhtoans": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Thanhtoan"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Giamgium": {
+        "type": "object",
+        "properties": {
+          "idgiamgia": {
+            "type": "number",
+            "format": "double"
+          },
+          "tengiamgia": {
+            "type": "string",
+            "nullable": true
+          },
+          "sotiengiam": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "phantramgiam": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "sotientoida": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "donhangs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Donhang"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Giohang": {
+        "type": "object",
+        "properties": {
+          "idgiohang": {
+            "type": "number",
+            "format": "double"
+          },
+          "idkhachhang": {
+            "type": "number",
+            "format": "double"
+          },
+          "tongtien": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "chitietgiohangs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Chitietgiohang"
+            },
+            "nullable": true
+          },
+          "idkhachhangNavigation": {
+            "$ref": "#/components/schemas/Khachhang"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Hinhanh": {
+        "type": "object",
+        "properties": {
+          "idhinhanh": {
+            "type": "number",
+            "format": "double"
+          },
+          "url": {
+            "type": "string",
+            "nullable": true
+          },
+          "idsanpham": {
+            "type": "number",
+            "format": "double"
+          },
+          "idsanphamNavigation": {
+            "$ref": "#/components/schemas/Sanpham"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Khachhang": {
+        "type": "object",
+        "properties": {
+          "idkhachhang": {
+            "type": "number",
+            "format": "double"
+          },
+          "hotenkhachhang": {
+            "type": "string",
+            "nullable": true
+          },
+          "diachikhachhang": {
+            "type": "string",
+            "nullable": true
+          },
+          "sodienthoai": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "khuvuc": {
+            "type": "string",
+            "nullable": true
+          },
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "passwork": {
+            "type": "string",
+            "nullable": true
+          },
+          "giohangs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Giohang"
+            },
+            "nullable": true
+          },
+          "yeuthiches": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Yeuthich"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Khuyenmai": {
+        "type": "object",
+        "properties": {
+          "idkhuyenmai": {
+            "type": "number",
+            "format": "double"
+          },
+          "tenkhuyenmai": {
+            "type": "string",
+            "nullable": true
+          },
+          "ngaybatdau": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "ngayketthuc": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "ngaytao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "ghichu": {
+            "type": "string",
+            "nullable": true
+          },
+          "nguoitao": {
+            "type": "string",
+            "nullable": true
+          },
+          "phantramkhuyenmai": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "anhkhuyenmai": {
+            "type": "string",
+            "nullable": true
+          },
+          "chitietkhuyenmais": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Chitietkhuyenmai"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Kichthuocsanpham": {
+        "type": "object",
+        "properties": {
+          "idkichthuoc": {
+            "type": "number",
+            "format": "double"
+          },
+          "tenkichthuoc": {
+            "type": "string",
+            "nullable": true
+          },
+          "idsanpham": {
+            "type": "number",
+            "format": "double"
+          },
+          "mota": {
+            "type": "string",
+            "nullable": true
+          },
+          "idsanphamNavigation": {
+            "$ref": "#/components/schemas/Sanpham"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Loaisanpham": {
+        "type": "object",
+        "properties": {
+          "idloaisanpham": {
+            "type": "number",
+            "format": "double"
+          },
+          "iddanhmuc": {
+            "type": "number",
+            "format": "double"
+          },
+          "tenloaisanpham": {
+            "type": "string",
+            "nullable": true
+          },
+          "mota": {
+            "type": "string",
+            "nullable": true
+          },
+          "iddanhmucNavigation": {
+            "$ref": "#/components/schemas/Danhmuc"
+          },
+          "sanphams": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Sanpham"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Mausacsanpham": {
+        "type": "object",
+        "properties": {
+          "idmausac": {
+            "type": "number",
+            "format": "double"
+          },
+          "tenmau": {
+            "type": "string",
+            "nullable": true
+          },
+          "idsanpham": {
+            "type": "number",
+            "format": "double"
+          },
+          "mota": {
+            "type": "string",
+            "nullable": true
+          },
+          "idsanphamNavigation": {
+            "$ref": "#/components/schemas/Sanpham"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Nhanvien": {
+        "type": "object",
+        "properties": {
+          "idnhanvien": {
+            "type": "number",
+            "format": "double"
+          },
+          "hotennhanvien": {
+            "type": "string",
+            "nullable": true
+          },
+          "ngaysinh": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "gioitinh": {
+            "type": "string",
+            "nullable": true
+          },
+          "diachinhanvien": {
+            "type": "string",
+            "nullable": true
+          },
+          "gmail": {
+            "type": "string",
+            "nullable": true
+          },
+          "sodienthoai": {
+            "type": "string",
+            "nullable": true
+          },
+          "trangthai": {
+            "type": "string",
+            "nullable": true
+          },
+          "ngaytuyendung": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "donhangs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Donhang"
+            },
+            "nullable": true
+          },
+          "phieunhaps": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Phieunhap"
+            },
+            "nullable": true
+          },
+          "tintucs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Tintuc"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Phieunhap": {
+        "type": "object",
+        "properties": {
+          "idphieunhap": {
+            "type": "number",
+            "format": "double"
+          },
+          "idnhanvien": {
+            "type": "number",
+            "format": "double"
+          },
+          "ngaynhap": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "tongtien": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ghichu": {
+            "type": "string",
+            "nullable": true
+          },
+          "chitietphieunhaps": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Chitietphieunhap"
+            },
+            "nullable": true
+          },
+          "idnhanvienNavigation": {
+            "$ref": "#/components/schemas/Nhanvien"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Sanpham": {
+        "type": "object",
+        "properties": {
+          "idsanpham": {
+            "type": "number",
+            "format": "double"
+          },
+          "tensanpham": {
+            "type": "string",
+            "nullable": true
+          },
+          "idloaisanpham": {
+            "type": "number",
+            "format": "double"
+          },
+          "giakhuyenmai": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "giagoc": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "chitietdonhangs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Chitietdonhang"
+            },
+            "nullable": true
+          },
+          "chitietgiohangs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Chitietgiohang"
+            },
+            "nullable": true
+          },
+          "chitietkhuyenmais": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Chitietkhuyenmai"
+            },
+            "nullable": true
+          },
+          "chitietsanphams": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Chitietsanpham"
+            },
+            "nullable": true
+          },
+          "hinhanhs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Hinhanh"
+            },
+            "nullable": true
+          },
+          "idloaisanphamNavigation": {
+            "$ref": "#/components/schemas/Loaisanpham"
+          },
+          "kichthuocsanphams": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Kichthuocsanpham"
+            },
+            "nullable": true
+          },
+          "mausacsanphams": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Mausacsanpham"
+            },
+            "nullable": true
+          },
+          "tonkhos": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Tonkho"
+            },
+            "nullable": true
+          },
+          "yeuthiches": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Yeuthich"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Thanhtoan": {
+        "type": "object",
+        "properties": {
+          "idthanhtoan": {
+            "type": "number",
+            "format": "double"
+          },
+          "iddonhang": {
+            "type": "number",
+            "format": "double"
+          },
+          "phuongthucthanhtoan": {
+            "type": "string",
+            "nullable": true
+          },
+          "trangthaithanhtoan": {
+            "type": "string",
+            "nullable": true
+          },
+          "ngaythanhtoan": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "magiaodich": {
+            "type": "string",
+            "nullable": true
+          },
+          "iddonhangNavigation": {
+            "$ref": "#/components/schemas/Donhang"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Tintuc": {
+        "type": "object",
+        "properties": {
+          "idtintuc": {
+            "type": "number",
+            "format": "double"
+          },
+          "tentintuc": {
+            "type": "string",
+            "nullable": true
+          },
+          "idnhanvien": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ngaytao": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "trangthai": {
+            "type": "string",
+            "nullable": true
+          },
+          "idnhanvienNavigation": {
+            "$ref": "#/components/schemas/Nhanvien"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Tonkho": {
+        "type": "object",
+        "properties": {
+          "idtonkho": {
+            "type": "number",
+            "format": "double"
+          },
+          "idsanpham": {
+            "type": "number",
+            "format": "double"
+          },
+          "soluongton": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "soluongcanhbao": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "chitietphieunhaps": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Chitietphieunhap"
+            },
+            "nullable": true
+          },
+          "idsanphamNavigation": {
+            "$ref": "#/components/schemas/Sanpham"
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Yeuthich": {
+        "type": "object",
+        "properties": {
+          "idyeuthich": {
+            "type": "number",
+            "format": "double"
+          },
+          "idkhachhang": {
+            "type": "number",
+            "format": "double"
+          },
+          "idsanpham": {
+            "type": "number",
+            "format": "double"
+          },
+          "idkhachhangNavigation": {
+            "$ref": "#/components/schemas/Khachhang"
+          },
+          "idsanphamNavigation": {
+            "$ref": "#/components/schemas/Sanpham"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
